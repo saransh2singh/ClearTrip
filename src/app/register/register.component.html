@@ -1,0 +1,78 @@
+<div class="overlay overlay-color flex-column">
+  <h1 class="text-center">Welcome to Cleartrip</h1>
+  <form
+    #supportForm="ngForm"
+    (ngSubmit)="onSubmit(supportForm)"
+    class="container"
+  >
+    <div class="row">
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="First name"
+          aria-label="First name"
+          required
+          name="firstName"
+          [(ngModel)]="firstName"
+          #firstNameRef="ngModel"
+        />
+        <div
+          *ngIf="firstNameRef.invalid && firstNameRef.touched"
+          class="text-danger"
+        >
+          First name is required
+        </div>
+      </div>
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Last name"
+          aria-label="Last name"
+          required
+          name="lastName"
+          [(ngModel)]="lastName"
+          #lastNameRef="ngModel"
+        />
+        <div
+          *ngIf="lastNameRef.invalid && lastNameRef.touched"
+          class="text-danger"
+        >
+          Last name is required
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <input
+        type="email"
+        class="form-control email"
+        placeholder="Email Address"
+        required
+        name="email"
+        [(ngModel)]="email"
+        #emailRef="ngModel"
+      />
+      <div *ngIf="emailRef.invalid && emailRef.touched" class="text-danger">
+        A valid email is required
+      </div>
+    </div>
+    <div class="mb-3">
+      <input
+        type="password"
+        class="form-control"
+        placeholder="Password"
+        required
+        name="password"
+        [(ngModel)]="password"
+        #phoneRef="ngModel"
+      />
+      <div *ngIf="phoneRef.invalid && phoneRef.touched" class="text-danger">
+        Password is required
+      </div>
+    </div>
+    <button class="btn" type="submit" [disabled]="supportForm.invalid">
+      Register
+    </button>
+  </form>
+</div>

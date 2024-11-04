@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.css";
+body {
+    background: url(https://images.unsplash.com/photo-1530789253388-582c481c54b0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    position: relative;
+    height: 100vh; 
+    overflow-x: hidden;
+} 
+
+ .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    text-align: center;
+    backdrop-filter: blur(2px);  
+    z-index: 1; 
+    
+}
+
+.overlay-color{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    /* width: 100%; */
+    /* height: 100%; */
+    /* position: fixed; */
+}
+
+
+.navbar {
+    z-index: 2; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.home-title {
+    font-size: 2.5rem;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

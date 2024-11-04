@@ -1,0 +1,63 @@
+<div class="overlay overlay-color flex-column">
+  <h1 class="text-center">Welcome to Cleartrip Support</h1>
+  <p class="text-center color-orange">We'll get back to you asap</p>
+  <form #supportForm="ngForm" (ngSubmit)="onSubmit(supportForm)" class="container">
+    <div class="row">
+      <div class="col">
+        <input 
+          type="text" 
+          class="form-control" 
+          placeholder="First name" 
+          aria-label="First name" 
+          required 
+          name="firstName" 
+          [(ngModel)]="firstName" 
+          #firstNameRef="ngModel">
+        <div *ngIf="firstNameRef.invalid && firstNameRef.touched" class="text-danger">
+          First name is required
+        </div>
+      </div>
+      <div class="col">
+        <input 
+          type="text" 
+          class="form-control" 
+          placeholder="Last name" 
+          aria-label="Last name" 
+          required 
+          name="lastName" 
+          [(ngModel)]="lastName" 
+          #lastNameRef="ngModel">
+        <div *ngIf="lastNameRef.invalid && lastNameRef.touched" class="text-danger">
+          Last name is required
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <input 
+        type="email" 
+        class="form-control email" 
+        placeholder="Email Address" 
+        required 
+        name="email" 
+        [(ngModel)]="email" 
+        #emailRef="ngModel">
+      <div *ngIf="emailRef.invalid && emailRef.touched" class="text-danger">
+        A valid email is required
+      </div>
+    </div>
+    <div class="mb-3">
+      <input 
+        type="number" 
+        class="form-control" 
+        placeholder="Phone Number" 
+        required 
+        name="phone" 
+        [(ngModel)]="phone" 
+        #phoneRef="ngModel">
+      <div *ngIf="phoneRef.invalid && phoneRef.touched" class="text-danger">
+        Phone number is required
+      </div>
+    </div>
+    <button class="btn" type="submit" [disabled]="supportForm.invalid">Send</button>
+  </form>
+</div>

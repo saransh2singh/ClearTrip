@@ -1,0 +1,43 @@
+<div class="overlayy overlay-color">
+   <div class="container mt-5">
+    <h2 class="text-center mb-4">{{ title }}</h2>
+    <!-- <mat-slide-toggle>Toggle me!</mat-slide-toggle> -->
+  
+    <div class="d-flex justify-content-center mb-4">
+      <input
+        class="form-control p-2 me-2"
+        type="text"
+        placeholder="Search"
+        [(ngModel)]="searchTerm"
+      />
+      <button class="btn btn-primary me-2" (click)="filterByDestination('Chennai')">Chennai</button>
+      <button class="btn btn-primary me-2" (click)="filterByDestination('Mumbai')">Mumbai</button>
+      <button class="btn btn-secondary" (click)="clearFilter()">Clear Filter</button>
+    </div>
+    <div class="d-flex justify-content-center m-5">
+    <button class="btn btn-success" (click)="createBooking()">Create New </button>
+</div>
+    <div class="row">
+      <div class="col-md-4 mb-4" *ngFor="let trip of filteredBookings">
+        <div class="card shadow-sm border-light">
+          <img [src]="trip.imageUrl" class="card-img-top" alt="{{ trip.destination }}">
+          <div class="card-body">
+            <h5 class="card-title text-primary">{{ trip.source }} to {{ trip.destination }}</h5>
+            <!-- <p class="card-text">
+              <strong>Date:</strong> {{ trip.travelDate.getDate() }}/{{ trip.travelDate.getMonth() + 1 }}/{{ trip.travelDate.getFullYear() }}
+            </p> -->
+            <p class="card-text"><strong>Travel Mode:</strong> {{ trip.travelMode }}</p>
+            <p class="card-text">
+              <strong>Rating:</strong> 
+              <app-stars [rating]="trip.rating" (ratingClicked)="onRatingClicked($event)"></app-stars>
+            </p>
+            <a [routerLink]="['/booking', trip.travelID]" class="btn btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="booking.length === 0">
+        <p>No trips available.</p>
+      </div>
+    </div>
+  </div>
+</div>

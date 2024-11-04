@@ -1,0 +1,40 @@
+<div class="overlay overlay-color flex-column">
+    <h1 class="text-center">Login</h1>
+    <form [formGroup]="customerForm" (ngSubmit)="onSave()" class="container">
+      <div class="mb-3">
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Email Address"
+          formControlName="email"
+          required
+          [ngClass]="{ 'is-invalid': email?.touched && !email?.valid }"
+        />
+        <div *ngIf="email?.errors && email?.touched" class="text-danger">
+          Please enter your email.
+        </div>
+        <div *ngIf="email?.errors && email?.touched" class="text-danger">
+          Enter a valid email.
+        </div>
+      </div>
+      <div class="mb-3">
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          formControlName="password"
+          required
+          [ngClass]="{ 'is-invalid': password?.touched && !password?.valid }"
+        />
+        <div *ngIf="password?.errors && password?.touched" class="text-danger">
+          Please enter your password.
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-success" type="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  

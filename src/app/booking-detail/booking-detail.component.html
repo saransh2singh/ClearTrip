@@ -1,0 +1,31 @@
+<div class="overlayy overlay-color">
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm border-light">
+        <img
+          [src]="booking?.imageUrl"
+          class="card-img-top"
+          alt="{{ booking?.destination }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title text-primary">
+            {{ booking?.source }} to {{ booking?.destination }}
+          </h5>
+          <p class="card-text">
+            <strong>Date:</strong> {{ booking?.travelDate | date: 'mediumDate' }}
+          </p>
+          <p class="card-text">
+            <strong>Travel Mode:</strong> {{ booking?.travelMode }}
+          </p>
+          <p class="card-text">
+            <strong>Rating:</strong>
+            <app-stars [rating]="booking?.rating ?? 0"></app-stars>
+          </p>
+        </div>
+      </div>
+      <button class="btn btn-info m-2" (click)="onBack()">Go Back</button>
+      <button class="btn btn-primary m-2" (click)="onEdit()">Edit</button>
+      <button class="btn btn-danger m-2" (click)="onDelete()">Delete</button>
+    </div>
+  </div>
+</div>

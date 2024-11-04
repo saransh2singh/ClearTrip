@@ -1,0 +1,28 @@
+.overlayy{
+    backdrop-filter: blur(2px);  
+    
+  }
+  .form-edit{
+    color: white;
+  }
+  p{
+    width: 60%;
+    font-weight: bold;
+  }
+  input{
+    height: 3em;
+  }
+  .btn{
+    padding: 0.5em 4em;
+  }
+  .overlay-color{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+  }
+  .edit-h1{
+    margin-bottom: 1em;
+  }

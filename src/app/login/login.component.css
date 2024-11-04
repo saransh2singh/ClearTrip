@@ -1,0 +1,21 @@
+
+.color-orange{
+    color:  rgb(255, 79, 23);
+}
+form{
+    max-width: 800px;
+}
+.btn{
+    background-color: rgb(255, 79, 23) ;
+    color: white;
+    padding: 1em 8em;
+    margin-top: 2em;
+}
+.form-control{
+    box-shadow: 0 8 8 red;
+    min-height: 3em;
+}
+
+.email{
+    margin-top: 1em;
+}

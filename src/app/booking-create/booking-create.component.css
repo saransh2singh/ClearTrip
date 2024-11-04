@@ -1,0 +1,14 @@
+.overlay-color{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.add-h1{
+    margin-bottom: 0.5em;
+}
+.button-create{
+    margin-top: 1em;
+}

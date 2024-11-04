@@ -1,0 +1,84 @@
+[
+    {
+      "travelID": 1,
+      "source": "Bengaluru",
+      "destination": "Chennai",
+      "travelMode": "Plane",
+      "travelDate": "2024-03-25T00:00:00.000Z",
+      "imageUrl": "./assets/images/photo1.jpg",
+      "rating": 5
+    },
+    {
+      "travelID": 2,
+      "source": "Delhi",
+      "destination": "Mumbai",
+      "travelMode": "Train",
+      "travelDate": "2024-04-15T00:00:00.000Z",
+      "imageUrl": "./assets/images/photo2.jpg",
+      "rating": 4
+    },
+    {
+      "travelID": 3,
+      "source": "Kolkata",
+      "destination": "Goa",
+      "travelMode": "Plane",
+      "travelDate": "2024-05-10T00:00:00.000Z",
+      "imageUrl": "./assets/images/photo3.jpg",
+      "rating": 3
+    },
+    {
+      "travelID": 4,
+      "source": "Chennai",
+      "destination": "Hyderabad",
+      "travelMode": "Bus",
+      "travelDate": "2024-06-05T00:00:00.000Z",
+      "imageUrl": "./assets/images/photo4.jpg",
+      "rating": 3.5
+    },
+    {
+      "travelID": 5,
+      "source": "Pune",
+      "destination": "Jaipur",
+      "travelMode": "Train",
+      "travelDate": "2024-07-20T00:00:00.000Z",
+      "imageUrl": "./assets/images/photo5.jpg",
+      "rating": 5
+    },
+    {
+      "travelID": 6,
+      "source": "Pune",
+      "destination": "Chennai",
+      "travelMode": "Plane",
+      "travelDate": "2023-06-09T00:00:00.000Z",
+      "imageUrl": "./assets/images/photo6.jpg",
+      "rating": 4.5
+    },
+    {
+      "travelID": 7,
+      "source": "Rajasthan",
+      "destination": "Chennai",
+      "travelMode": "Bus",
+      "travelDate": "2024-06-05T00:00:00.000Z",
+      "imageUrl": "./assets/images/photo7.jpg",
+      "rating": 4
+    },
+    {
+      "travelID": 8,
+      "source": "Patna",
+      "destination": "Chennai",
+      "travelMode": "Train",
+      "travelDate": "2024-06-05T00:00:00.000Z",
+      "imageUrl": "./assets/images/photo8.jpg",
+      "rating": 5
+    },
+    {
+      "travelID": 9,
+      "source": "Chennai",
+      "destination": "Mumbai",
+      "travelMode": "Bus",
+      "travelDate": "2024-06-05T00:00:00.000Z",
+      "imageUrl": "./assets/images/photo1.jpg",
+      "rating": 4
+    }
+  ]
+  

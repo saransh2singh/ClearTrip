@@ -1,0 +1,78 @@
+.form-input{
+    margin-right: 1em;
+    height: 4em;
+}
+.input-date{
+    height: 4em;
+    margin-top: 1em;
+    width: 49.5%;
+}
+.search-btn{
+    padding: 1em 8em;
+    margin: 1em;
+    height: 4em;
+    background-color: rgb(255, 79, 23);
+    /* width: 49.5%; */
+}
+.booking-page{
+    flex-direction: column;
+    position: relative;
+}
+p{
+    color: rgb(255, 79, 23);
+}
+.flight{
+    background: url("https://images.unsplash.com/photo-1535156123341-18b2b37d485a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    height: 36em;
+    width: 100%;
+}
+.search-flight{
+    padding-top: 1em;
+}
+.flight-form{
+    padding-top: 3em;
+}
+.bus-row{
+    /* background-size: cover;
+    height: 36em;*/
+    width: 100%; 
+    display: flex;
+    background-color: black;
+}
+.bus{
+    /* background: url("https://www.eichertrucksandbuses.com/_next/image?url=https%3A%2F%2Fcms.eichertrucksandbuses.com%2Fuploads%2Fbanner%2F46%2F5918a939e55e884feb67a016ca54ccb6.png&w=1920&q=75"); */
+    /* background: url("https://images.unsplash.com/photo-1478359900967-91ec0c6edc60?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    display: flex;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+.train{
+    background: url("https://images.unsplash.com/photo-1535535112387-56ffe8db21ff?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.margin{
+    margin: 0 0 2em 2em;
+}
+.date-margin{
+    margin-left: 8em;
+}
+.margin-input{
+    margin-left: 2em;
+    margin-right: 4em;
+    margin-bottom: 3em;
+}
+.bus-img{
+    height: 38em;
+}
+.img-width{
+    width: 100%;
+}
+.train-row{
+    display: flex;
+    background-color: black;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+.btn{
+    white-space: nowrap;
+}

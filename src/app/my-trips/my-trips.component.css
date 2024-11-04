@@ -1,0 +1,23 @@
+.card {
+    transition: transform 0.5s; 
+  }
+  
+  .card:hover {
+    transform: scale(1.05); 
+  }
+  
+  .btn {
+    transition: background-color 0.3s; 
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; 
+  }
+  
+  .form-control{
+    width: 55em;
+    height: 3em;
+  }
+  .overlayy{
+    backdrop-filter: blur(2px);  
+  }

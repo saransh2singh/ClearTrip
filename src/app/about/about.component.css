@@ -1,0 +1,35 @@
+/* .about-content{
+    width: 1000px;
+} */
+ .color{
+    color: #254eaf;
+ }
+ .overlay-color{
+    color: white;
+ }
+ .overlayy{
+    backdrop-filter: blur(2px);  
+ }
+ .about-banner{
+    padding-bottom: 2em;
+  }
+  .about-head{
+    padding-bottom: 1em;
+  }
+  .left-w{
+    width:66%;
+  }
+  .facebook{
+    background-color: 	#1877F2;
+  }
+  .linkedin{
+    background-color: 	#0077B5;
+  }
+  .twitter{
+    background-color: #1DA1F2;
+  }
+
+:host {
+  background: white;
+  background-size: cover; 
+}

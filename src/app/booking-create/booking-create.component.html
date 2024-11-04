@@ -1,0 +1,43 @@
+<div class="overlayy overlay-color">
+  <h1 class="add-h1 display-4">Add New Travel Details</h1>
+  <form class="container form-edit d-flex flex-column justify-content-center align-items-center" (ngSubmit)="onCreate()" #bookingForm="ngForm">
+    
+  
+      Source:
+      <input class="form-control" type="text" [(ngModel)]="newBooking['source']" name="source" required>
+      <div *ngIf="bookingForm.controls['source']?.invalid && (bookingForm.controls['source']?.touched || bookingForm.submitted)" class="text-danger">
+        Source is required.
+      </div>
+    
+    
+  
+      Destination:
+      <input class="form-control" type="text" [(ngModel)]="newBooking['destination']" name="destination" required>
+      <div *ngIf="bookingForm.controls['destination']?.invalid && (bookingForm.controls['destination']?.touched || bookingForm.submitted)" class="text-danger">
+        Destination is required.
+      </div>
+    
+    
+  
+      Rating:
+      <input class="form-control" type="number" [(ngModel)]="newBooking['rating']" name="rating" required min="1" max="5">
+      <div *ngIf="bookingForm.controls['rating']?.invalid && (bookingForm.controls['rating']?.touched || bookingForm.submitted)" class="text-danger">
+        Rating is required and must be between 1 and 5.
+      </div>
+    
+    
+  
+      Mode:
+      <select class="form-control" [(ngModel)]="newBooking['travelMode']" name="travelMode" required>
+        <option *ngFor="let mode of travelModes" [value]="mode">{{ mode }}</option>
+      </select>
+      <div *ngIf="bookingForm.controls['travelMode']?.invalid && (bookingForm.controls['travelMode']?.touched || bookingForm.submitted)" class="text-danger">
+        Travel mode is required.
+      </div>
+    
+
+    <div class="d-flex justify-content-center button-create">
+      <button class="btn btn-success m-2" type="submit" [disabled]="bookingForm.invalid">Create</button>
+    </div>
+  </form>
+</div>

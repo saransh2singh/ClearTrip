@@ -1,0 +1,11 @@
+.row{
+    display: flex;
+    justify-content: center;
+}
+.overlay-color{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
