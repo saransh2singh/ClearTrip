@@ -14,11 +14,11 @@
           <a class="nav-link" [routerLink]="['/about']"  routerLinkActive="active">About</a>
           <a class="nav-link" [routerLink]="['/contact']"  routerLinkActive="active">Contact</a>
           <a class="nav-link" [routerLink]="['/mytrips']"  routerLinkActive="active">My Trips</a>
+          <a class="nav-link" (click)="logout()" *ngIf="authService.isLoggedIn()">Logout</a>
           </ng-container>
           <ng-container *ngIf="!authService.isLoggedIn()">
           <a class="nav-link" [routerLink]="['/login']"   routerLinkActive="active">Login</a>
           <a class="nav-link" [routerLink]="['/register']"  routerLinkActive="active">Register</a>
-          <a class="nav-link" (click)="logout()" *ngIf="authService.isLoggedIn()">Logout</a>
           </ng-container>
         </div>
       </div>

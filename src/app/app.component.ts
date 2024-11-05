@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from "./about/about.component";
 import { BookingComponent } from "./booking/booking.component";
@@ -16,9 +16,10 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'travel';
-  constructor(public authService: AuthComponent) {}
+  constructor(public authService: AuthComponent,private router: Router) {}
 
   logout() {
     this.authService.logout();
+    this.router.navigate(['/login']); 
   }
 }
